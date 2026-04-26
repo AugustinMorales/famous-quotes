@@ -1,0 +1,139 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.page-wrapper {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f1f3f5;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table th {
+    background-color: #f1f3f5;
+    font-size: 0.85rem;
+}
+
+.quote-text-cell {
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: italic;
+    color: #555;
+}
+
+.stat-box {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat-box .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.stat-box .label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.login-box {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 35px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.login-box p.subtitle {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btn-logout {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.btn-logout:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.nav-username {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.88rem;
+    margin-right: 8px;
+}
