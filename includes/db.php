@@ -1,16 +1,16 @@
 <?php
-// Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'famous_quotes');
-
 function getDB() {
     static $pdo = null;
     if ($pdo === null) {
+        $host = getenv('DB_HOST') ?: 'localhost';
+        $user = getenv('DB_USER') ?: 'root';
+        $pass = getenv('DB_PASS') ?: '';
+        $name = getenv('DB_NAME') ?: 'famous_quotes';
+        $port = getenv('DB_PORT') ?: '3306';
+
         try {
-            $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
-            $pdo = new PDO($dsn, DB_USER, DB_PASS, [
+            $dsn = "mysql:host=$host;port=$port;dbname=$name;charset=utf8mb4";
+            $pdo = new PDO($dsn, $user, $pass, [
                 PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES   => false,
